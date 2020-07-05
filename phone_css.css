@@ -1,4 +1,4 @@
-input{
+input[type=text]{
 	border: 2px solid #ccc;
 	padding: 3px 1px 0 0;
 	width: : 100px;
@@ -7,6 +7,8 @@ input{
 	border: 2px solid black;
 	border-radius:3px;
 	padding-left: 8px;
+    padding-left: 8px;
+
 	color: green;
 }
 
@@ -28,11 +30,20 @@ input[type=text]:focus{
 
 .cost_explorer{
   width: 80%;
-  height: 300px;
+  height: 200px;
   border: 15px solid teal;
   padding: 50px;
   margin: 20px;
   margin-top: 60px;
+}
+
+.runtime_calculation{
+  width: 80%;
+  height: 100px;
+  border: 15px solid gray;
+  padding: 50px;
+  margin: 20px;
+  margin-top: 50px;
 }
 
 
@@ -47,14 +58,14 @@ width: 50%;
 #incomeCalcDiv{
 	  padding: 50px;
 	width: 30%;
-	 border: 5px solid red;
+	 /*border: 5px solid red;*/
 	 margin-left: 0px;
 	 margin-top: -30px;
 }
 #costCalcDiv{
 	 padding: 50px;
 	width: 30%;
-	 border: 5px solid red;
+	 /*border: 5px solid red;*/
 	 margin-left: 420px;
 	 margin-top: -305px;
 
@@ -69,34 +80,37 @@ width: 50%;
   margin: 20px;
   /*margin-top: 60px;*/
 }
-.runtime_calculation{
-  width: 80%;
-  height: 100px;
-  border: 15px solid gray;
-  padding: 50px;
-  margin: 20px;
-  margin-top: 80px;
-}
+
 
 
 
 .list_tables{
  width: 80%;
-  height: 2500px;
+  height: 1000px;
   border: 15px solid black;
   padding: 50px;
   margin: 20px;
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 .expense_block {
-  width: 80%;
+  width: 40%;
   height: 1000px;
-  border: 15px solid green;
+  /*border: 1px solid green;*/
   padding: 50px;
-  margin: 20px;
+  margin: -50px;
   margin-top: 20px;
 }
+
+.income_block {
+  width: 40%;
+  height: 500px;
+  /*border: 1px solid red;*/
+  padding: 50px;
+  margin: 400px;
+  margin-top: -1100px;
+}
+
 
 table, th, td{
 	border: 1px solid black;
@@ -112,14 +126,6 @@ tbody{
 }
 
 
-.income_block {
-  width: 80%;
-  height: 500px;
-  border: 15px solid red;
-  padding: 50px;
-  margin: 20px;
-  margin-top: 150px;
-}
 
 .final_calculation{
 	 width: 80%;
@@ -127,6 +133,6 @@ tbody{
   border: 15px solid yellow;
   padding: 50px;
   margin: 20px;
-  margin-top: 100px;
+  margin-top: 500px;
 
 }
