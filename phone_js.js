@@ -11,6 +11,17 @@ function calculateCost() {
 	 var itemName=document.querySelector("#itemId").value;
 	 var cost= document.querySelector("#costId").value;
 
+	 	 if (itemName == "") {
+	 	alert ("Please enter Expense name");
+        return false;
+    }
+	 	 if (cost == "") {
+	 	alert ("Please enter Expense amount");
+        return false;
+    }
+
+
+
 	 var table=document.getElementsByTagName('table')[0];
 	 var newCostRow=table.insertRow(1);
 	 var newCell1=newCostRow.insertCell(0);
@@ -44,7 +55,8 @@ function calculateCost() {
 	 	document.querySelector("#displayCurrentTotalResidueId").innerHTML=`Residue(Total Income-Total Cost): ${minusCostValue}`;
 	 	CurrentResidue = minusCostValue;
 	 	console.log(`CurrentResidue is ${CurrentResidue}`)
-	 	 
+
+	 	 	 
 	 	}}}
 
 
@@ -54,6 +66,18 @@ function calculateCost() {
 	 	function calculateIncome() {
 	 var IncomeSource=document.querySelector("#incomeSourceId").value;
 	 var salary= document.querySelector("#salaryId").value;
+
+ 	 if (IncomeSource == "") {
+	 	alert ("Please enter Credit source");
+        return false;
+    }
+
+
+	 	 if (salary == "") {
+	 	alert ("Please enter Credit amount");
+        return false;
+    }
+
 
 	 var table=document.getElementsByTagName('table')[1];
 	 var newCostRow=table.insertRow(1);
