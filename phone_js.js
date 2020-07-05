@@ -20,6 +20,12 @@ function calculateCost() {
         return false;
     }
 
+      if (isNaN(cost)) 
+    {
+        alert("Expense amount must be numbers");
+        return false;
+    }
+
 
 
 	 var table=document.getElementsByTagName('table')[0];
@@ -27,7 +33,7 @@ function calculateCost() {
 	 var newCell1=newCostRow.insertCell(0);
 	 var newCell2=newCostRow.insertCell(1);
 
-	 newCell1.innerHTML= itemName;
+	 newCell1.innerHTML= itemName.toUpperCase();
 	 newCell2.innerHTML= cost;
 
 	 var myArray=[cost];
@@ -49,7 +55,9 @@ function calculateCost() {
 	 	console.log(`Sum of cost is ${sumCostValue}`)	
 
 
-	 	document.querySelector("#displayCostResultId").innerHTML= `Total Cost: ${sumCostValue}`;
+	 	document.querySelector("#displayCostResultId1").innerHTML= `Total Cost: ${sumCostValue}`;
+	 		 	document.querySelector("#displayCostResultId2").innerHTML= `Total Cost: ${sumCostValue}`;
+
 	 	Cost = sumCostValue;
 	 	 console.log(`Total cost is ${Cost}`)
 	 	document.querySelector("#displayCurrentTotalResidueId").innerHTML=`Residue(Total Income-Total Cost): ${minusCostValue}`;
@@ -78,13 +86,19 @@ function calculateCost() {
         return false;
     }
 
+      if (isNaN(salary)) 
+    {
+        alert("Credit amount must be numbers");
+        return false;
+    }
+
 
 	 var table=document.getElementsByTagName('table')[1];
 	 var newCostRow=table.insertRow(1);
 	 var newCell1=newCostRow.insertCell(0);
 	 var newCell2=newCostRow.insertCell(1);
 
-	 newCell1.innerHTML= IncomeSource;
+	 newCell1.innerHTML= IncomeSource.toUpperCase();
 	 newCell2.innerHTML= salary;
 
 	 var incomeArray=[salary];
@@ -102,9 +116,10 @@ function calculateCost() {
 	 		sumSalaryValue=sumSalaryValue+ parseInt(calcSalaryCell.rows[i].cells[1].innerHTML);
  
 
-	 	document.querySelector("#displayIncomeResultId").innerHTML= `Total Income: ${sumSalaryValue}`;
-	 	// document.querySelector("#displayCurrentTotalResidueId").innerHTML= `Residue is: ${minusCostValue}`;
-	
+	 	document.querySelector("#displayIncomeResultId1").innerHTML= `Total Income: ${sumSalaryValue}`;
+	 	// document.querySelector("#displayCurrentTotalResidueId").innerHTML= `Residue is: ${minusCostValue}`;	
+	 		 	document.querySelector("#displayIncomeResultId2").innerHTML= `Total Income: ${sumSalaryValue}`;
+
 	 	console.log(`Total is ${sumSalaryValue}`)
 	 	 Income = sumSalaryValue;
 	 	  console.log(`Total income is ${Income}`)
