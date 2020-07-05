@@ -90,13 +90,23 @@ width: 50%;
 }
 
 .expense_block {
-  width: 80%;
+  width: 40%;
   height: 1000px;
-  border: 15px solid green;
+  border: 1px solid green;
   padding: 50px;
-  margin: 20px;
+  margin: -50px;
   margin-top: 20px;
 }
+
+.income_block {
+  width: 40%;
+  height: 500px;
+  border: 1px solid red;
+  padding: 50px;
+  margin: 400px;
+  margin-top: -110px;
+}
+
 
 table, th, td{
 	border: 1px solid black;
@@ -112,14 +122,6 @@ tbody{
 }
 
 
-.income_block {
-  width: 80%;
-  height: 500px;
-  border: 15px solid red;
-  padding: 50px;
-  margin: 20px;
-  margin-top: 150px;
-}
 
 .final_calculation{
 	 width: 80%;
@@ -127,6 +129,6 @@ tbody{
   border: 15px solid yellow;
   padding: 50px;
   margin: 20px;
-  margin-top: 100px;
+  margin-top: 500px;
 
 }
