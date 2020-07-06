@@ -1,3 +1,6 @@
+/*body{
+  font-family: arial;
+}*/
 input[type=text]{
 	border: 2px solid #ccc;
 	padding: 3px 1px 0 0;
@@ -7,7 +10,8 @@ input[type=text]{
 	border: 2px solid black;
 	border-radius:3px;
 	padding-left: 8px;
-    padding-left: 8px;
+  padding-left: 8px;
+  font-size: 30px;
 
 	color: green;
 }
@@ -18,11 +22,15 @@ input[type=text]:focus{
 }
 
 
+button{
+  font-size: 30px;
+}
+
 
 .header{
 	 width: 80%;
   height: 100px;
-  border: 15px solid blue;
+  border: 15px solid teal;
   padding: 50px;
   margin: 20px;
 
@@ -38,14 +46,23 @@ input[type=text]:focus{
 }
 
 .runtime_calculation{
-  width: 80%;
-  height: 100px;
+  width: 85%;
+  height: 180px;
   border: 15px solid gray;
-  padding: 50px;
+  padding: 25px;
   margin: 20px;
   margin-top: 50px;
 }
 
+#dashboardTitle {
+  margin-top: -15px;
+}
+
+.dashboardText{
+  font-size: 35px;
+  font-weight: bold;
+  font-family: arial;
+}
 
 .input_income{
 width: 50%;
@@ -55,23 +72,6 @@ width: 50%;
   margin: 20px;
   /*margin-top: 60px;*/
 }
-#incomeCalcDiv{
-	  padding: 50px;
-	width: 30%;
-	 /*border: 5px solid red;*/
-	 margin-left: 0px;
-	 margin-top: -30px;
-}
-#costCalcDiv{
-	 padding: 50px;
-	width: 30%;
-	 /*border: 5px solid red;*/
-	 margin-left: 420px;
-	 margin-top: -305px;
-
-}
-
-
 .expense_input{
 width: 50%;
   height: 50px;
@@ -81,42 +81,74 @@ width: 50%;
   /*margin-top: 60px;*/
 }
 
+#incomeCalcDiv{
+	  padding: 50px;
+	width: 30%;
+	 /*border: 5px solid red;*/
+	 margin-left: -50px;
+	 margin-top: -100px;
+}
+#costCalcDiv{
+	 padding: 50px;
+	width: 30%;
+	 /*border: 5px solid red;*/
+	 margin-left: 370px;
+	 margin-top: -390px;
+
+}
+
+
+
+
 
 
 
 .list_tables{
- width: 80%;
+ width: 85%;
   height: 1000px;
   border: 15px solid black;
   padding: 50px;
-  margin: 20px;
+  margin: 5px;
   margin-top: 50px;
 }
-
-.expense_block {
-  width: 40%;
-  height: 1000px;
-  /*border: 1px solid green;*/
+#tableZoneTitle{
+  margin: -80px;
+  margin-top: -100px;
   padding: 50px;
-  margin: -50px;
-  margin-top: 20px;
+}
+
+.totalHeader{
+  width: 300px;
+  height: 35px;
+  font-size: 30px;
+  font-family: sans-serif;
 }
 
 .income_block {
   width: 40%;
+  height: 1000px;
+  /*border: 1px solid green;*/
+  padding: 50px;
+  margin: -90px;
+  margin-top: -970px;
+}
+
+.expense_block {
+  width: 40%;
   height: 500px;
   /*border: 1px solid red;*/
   padding: 50px;
-  margin: 400px;
-  margin-top: -1100px;
+  margin: 370px;
+  margin-top: -100px;
 }
 
 
 table, th, td{
 	border: 1px solid black;
-	width: 350px;
+	width: 440px;
 	padding: 5px;
 	font-family: sans-serif;
+  font-size: 30px;
 }
 
 tbody{
@@ -135,4 +167,11 @@ tbody{
   margin: 20px;
   margin-top: 500px;
 
+}
+
+
+#footerText {
+  font-size: 30px;
+  margin-top: 70px;
+  /*margin: -100px;*/
 }

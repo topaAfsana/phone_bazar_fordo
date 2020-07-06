@@ -60,7 +60,8 @@ function calculateCost() {
 
 	 	Cost = sumCostValue;
 	 	 console.log(`Total cost is ${Cost}`)
-	 	document.querySelector("#displayCurrentTotalResidueId").innerHTML=`Residue(Total Income-Total Cost): ${minusCostValue}`;
+	 	 //Residue=(Total Income-Total Cost)
+	 	document.querySelector("#displayCurrentTotalResidueId").innerHTML=`Residue: ${minusCostValue}`; 
 	 	CurrentResidue = minusCostValue;
 	 	console.log(`CurrentResidue is ${CurrentResidue}`)
 
@@ -127,6 +128,22 @@ function calculateCost() {
 
 
 
+
+
+//CLEAR TABLE ITEM
+
+function clearItems(){
+	var tableForclear=document.getElementsByTagName('table')[0];
+	var tableRows=tableForclear.getElementsByTagName('tr');
+	var rowCount=tableRows.length;
+	for (var x=rowCount-1;x>0;x--){
+		tableForclear.removeChild(tableRows[x]);
+		alert("done");
+	}
+	// tableForclear.innerHTML="";
+
+
+}
 
 	 	
 // TOTAL ALLOCATION
