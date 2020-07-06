@@ -31,11 +31,7 @@ label{
   font-size: 30px;
 }
 
-.form-date{
-  margin: 30px;
-  margin-left: -30px;
 
-}
 
 
 .header{
@@ -47,10 +43,20 @@ label{
 }
 
 #tittleheader{
-  color: blue;
+  background-color: green;
+  color: white;
   margin: -30px;
   margin-top: -40px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  text-align: center;
 
+}
+
+.form-date{
+  margin: 30px;
+  margin-left: -30px;
+  margin-top: 100px;
 }
 
 .cost_explorer{
@@ -60,6 +66,7 @@ label{
   padding: 50px;
   margin: 20px;
   margin-top: 60px;
+  position: relative;
 }
 
 
@@ -87,13 +94,16 @@ width: 50%;
 	 /*border: 5px solid red;*/
 	 margin-left: -50px;
 	 margin-top: -100px;
+   position: absolute;
 }
 #costCalcDiv{
+
 	 padding: 50px;
 	width: 30%;
 	 /*border: 5px solid red;*/
 	 margin-left: 370px;
-	 margin-top: -385px;
+	 margin-top: -95px;
+   position: absolute;
 
 }
 
