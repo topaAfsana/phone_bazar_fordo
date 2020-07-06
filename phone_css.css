@@ -23,21 +23,38 @@ input[type=text]:focus{
 
 
 button{
+  font-size: 24px;
+}
+
+label{
+  font-weight: bold;
   font-size: 30px;
+}
+
+.form-date{
+  margin: 30px;
+  margin-left: -30px;
+
 }
 
 
 .header{
-	 width: 80%;
+	 width: 83%;
   height: 100px;
   border: 15px solid teal;
   padding: 50px;
   margin: 20px;
+}
+
+#tittleheader{
+  color: blue;
+  margin: -30px;
+  margin-top: -40px;
 
 }
 
 .cost_explorer{
-  width: 80%;
+  width: 83%;
   height: 200px;
   border: 15px solid teal;
   padding: 50px;
@@ -45,24 +62,7 @@ button{
   margin-top: 60px;
 }
 
-.runtime_calculation{
-  width: 85%;
-  height: 180px;
-  border: 15px solid gray;
-  padding: 25px;
-  margin: 20px;
-  margin-top: 50px;
-}
 
-#dashboardTitle {
-  margin-top: -15px;
-}
-
-.dashboardText{
-  font-size: 35px;
-  font-weight: bold;
-  font-family: arial;
-}
 
 .input_income{
 width: 50%;
@@ -93,8 +93,27 @@ width: 50%;
 	width: 30%;
 	 /*border: 5px solid red;*/
 	 margin-left: 370px;
-	 margin-top: -390px;
+	 margin-top: -385px;
 
+}
+
+.runtime_calculation{
+  width: 89%;
+  height: 180px;
+  border: 15px solid gray;
+  padding: 25px;
+  margin: 20px;
+  margin-top: 50px;
+}
+
+#dashboardTitle {
+  margin-top: -15px;
+}
+
+.dashboardText{
+  font-size: 35px;
+  font-weight: bold;
+  font-family: arial;
 }
 
 
@@ -172,6 +191,7 @@ tbody{
 
 #footerText {
   font-size: 30px;
-  margin-top: 70px;
-  /*margin: -100px;*/
+  margin-top: 80px;
+  margin-left: -70px;
+
 }
