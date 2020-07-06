@@ -10,6 +10,7 @@ var CurrentResidue;
 function calculateCost() {
 	 var itemName=document.querySelector("#itemId").value;
 	 var cost= document.querySelector("#costId").value;
+	 var date= document.querySelector("#date").value;
 
 	 	 if (itemName == "") {
 	 	alert ("Please enter Expense name");
@@ -58,12 +59,21 @@ function calculateCost() {
 	 	document.querySelector("#displayCostResultId1").innerHTML= `Total Cost: ${sumCostValue}`;
 	 		 	document.querySelector("#displayCostResultId2").innerHTML= `Total Cost: ${sumCostValue}`;
 
+
+	 	
+
 	 	Cost = sumCostValue;
 	 	 console.log(`Total cost is ${Cost}`)
 	 	 //Residue=(Total Income-Total Cost)
 	 	document.querySelector("#displayCurrentTotalResidueId").innerHTML=`Residue: ${minusCostValue}`; 
 	 	CurrentResidue = minusCostValue;
 	 	console.log(`CurrentResidue is ${CurrentResidue}`)
+
+	 	// if (date == ""){
+	 	// 	alert("Hey,Its better to enter a date for reference");
+	 	// 	return false;
+	 	// }
+	 	document.querySelector("#dateDisplay").innerHTML=`${date}`;
 
 	 	 	 
 	 	}}}
@@ -77,7 +87,7 @@ function calculateCost() {
 	 var salary= document.querySelector("#salaryId").value;
 
  	 if (IncomeSource == "") {
-	 	alert ("Please enter Credit source");
+	 	alert ("Please enter Balance source");
         return false;
     }
 
