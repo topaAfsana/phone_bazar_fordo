@@ -117,9 +117,9 @@ function calculateCost() {
 	 		sumSalaryValue=sumSalaryValue+ parseInt(calcSalaryCell.rows[i].cells[1].innerHTML);
  
 
-	 	document.querySelector("#displayIncomeResultId1").innerHTML= `Total Income: ${sumSalaryValue}`;
+	 	document.querySelector("#displayIncomeResultId1").innerHTML= `Total Balance: ${sumSalaryValue}`;
 	 	// document.querySelector("#displayCurrentTotalResidueId").innerHTML= `Residue is: ${minusCostValue}`;	
-	 		 	document.querySelector("#displayIncomeResultId2").innerHTML= `Total Income: ${sumSalaryValue}`;
+	 		 	document.querySelector("#displayIncomeResultId2").innerHTML= `Total Balance: ${sumSalaryValue}`;
 
 	 	console.log(`Total is ${sumSalaryValue}`)
 	 	 Income = sumSalaryValue;
