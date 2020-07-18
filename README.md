@@ -1,3 +1,6 @@
 # phone_bazar_fordo
 BAZAR FORDO
 done
+
+
+2. ONLY EXPENSE PART DEPLOYED TO GIT
